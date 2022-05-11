@@ -2,10 +2,13 @@
 
 public enum TokenType
 {
-    PLUS, 
+    PLUS,
     MINUS,
-    DIVIDE, 
-    MULTIPLY
+    DIVIDE,
+    MULTIPLY,
+    INT_VALUE,
+    RIGHT_PAREN,
+    LEFT_PAREN
 }
 
 public class Token
@@ -17,5 +20,10 @@ public class Token
     }
 
     public TokenType Type { get; private set; }
-    public string Value { get; private set; }  
+    public string Value { get; private set; }
+
+    public override string? ToString()
+    {
+        return $"Token(Type={Type}, Value=({Value}))";
+    }
 }
