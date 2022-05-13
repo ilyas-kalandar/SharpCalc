@@ -91,6 +91,12 @@
                     case ' ':
                         // continue
                         break;
+                    case ')':
+                        PushToken(TokenType.RIGHT_PAREN);
+                        break;
+                    case '(':
+                        PushToken(TokenType.LEFT_PAREN);
+                        break;
                     default:
                         throw new FormatException($"Invalid character given: {current} ({_currentIndex} symbol)");
                 }
