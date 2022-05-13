@@ -11,6 +11,9 @@
         MULTIPLY,
         INT_VALUE,
         RIGHT_PAREN,
-        LEFT_PAREN
+        LEFT_PAREN,
+
+        EOF
+
     }
 }
