@@ -1,4 +1,6 @@
-﻿namespace SharpCalc;
+﻿using SharpCalc.Lexer;
+
+namespace SharpCalc;
 
 public class Program
 {
