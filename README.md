@@ -5,7 +5,7 @@ Currently support +, -, /, * and ()
 ## How to run?
 ```
 cd SharpCalc
-dotnet run</code>
+dotnet run
 ```
 ## Example
 ```SharpCalc>> (10 * 3) + (6 * 2) + 8
