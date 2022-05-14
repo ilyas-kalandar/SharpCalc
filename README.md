@@ -8,7 +8,8 @@ cd SharpCalc
 dotnet run
 ```
 ## Example
-```SharpCalc>> (10 * 3) + (6 * 2) + 8
+```
+SharpCalc>> (10 * 3) + (6 * 2) + 8
 Ans: 50
 SharpCalc>> 2 + 7 * 3
 Ans: 23
