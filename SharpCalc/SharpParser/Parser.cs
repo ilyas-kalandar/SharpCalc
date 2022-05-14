@@ -103,11 +103,11 @@ namespace SharpCalc.SharpParser
 
                 if(tok.Type != TokenType.RIGHT_PAREN)
                 {
-                    throw new FormatException("Expected ')'!");
+                    throw new FormatException($"Expected ')' got {tok.Type}");
                 }
                 return res;
             }
-            throw new FormatException("Expected ( or Value!");
+            throw new FormatException($"Expected {TokenType.LEFT_PAREN} or {TokenType.INT_VALUE}, got {token.Type}");
         }
     }
 }
