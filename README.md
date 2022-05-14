@@ -1,7 +1,6 @@
 # SharpCalc
 ### Tiny calculator, created with C# & .NET
-
-### Currently support +, -, /, * and ()
+Currently support +, -, /, * and ()
 
 ## How to run?
 ```
