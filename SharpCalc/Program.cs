@@ -30,7 +30,7 @@ namespace SharpCalc
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Exception occured: ", e.Message);
+                    Console.WriteLine($"Exception occured: {e.Message}");
                     continue;
                 }
                 Console.WriteLine($"Ans: {ast.Evalulate()}");
