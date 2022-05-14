@@ -4,12 +4,14 @@
 ### Currently support +, -, /, * and ()
 
 ## How to run?
-<code>cd SharpCalc</code><br>
-<code>dotnet run</code>
-
+```
+cd SharpCalc
+dotnet run</code>
+```
 ## Example
-<code>SharpCalc>> (10 * 3) + (6 * 2) + 8</code><br/>
-<code>Ans: 50</code><br/>
-<code>SharpCalc>> 2 + 7 * 3</code><br/>
-<code>Ans: 23</code><br/>
-<code>SharpCalc>></code><br/>
+```SharpCalc>> (10 * 3) + (6 * 2) + 8
+Ans: 50
+SharpCalc>> 2 + 7 * 3
+Ans: 23
+SharpCalc>>
+```
