@@ -1,39 +1,41 @@
-﻿using SharpCalc.SharLexer;
-using SharpCalc.SharpParser;
+﻿using System.Numerics;
 
 namespace SharpCalc
 {
     public class Program
     {
+        // for calculating
+        private static Calculator calc = new();
+
+        // for result
+        private static BigInteger result;
         public static void Main(string[] args)
         {
-            Lexer lex;
-            Parser parser;
+            Console.WriteLine("SharpCalc, just calculator :D");
+            
             while(true)
             {
                 Console.Write("SharpCalc>> ");
-                string? line = Console.ReadLine();
 
-                if (line == null || line.Length == 0)
+                string? expression = Console.ReadLine();
+
+                if (string.IsNullOrWhiteSpace(expression))
                 {
-                    Environment.Exit(0);
+                    Console.WriteLine("Good bye");
+                    return;
                 }
-
-                lex = new Lexer(line);
-                lex.GetTokens();
-                parser = new Parser(lex.Tokens);
-                IAbstractSyntaxTree ast;
 
                 try
                 {
-                    ast = parser.Parse();
+                    result = calc.Evalulate(expression);
                 }
-                catch (Exception e)
+                catch(Exception e)
                 {
-                    Console.WriteLine($"Exception occured: {e.Message}");
+                    Console.WriteLine(e);
                     continue;
                 }
-                Console.WriteLine($"Ans: {ast.Evalulate()}");
+
+                Console.WriteLine(result);
             }
         }
     }
