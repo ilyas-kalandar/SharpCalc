@@ -45,7 +45,7 @@ namespace SharpCalc.SharpParser
                 case TokenType.PLUS:
                     return Operator.PLUS;
                 case TokenType.MINUS:
-                    return Operator.PLUS;
+                    return Operator.MINUS;
                 case TokenType.MULTIPLY:
                     return Operator.MULTIPLY;
                 case TokenType.DIVIDE:
