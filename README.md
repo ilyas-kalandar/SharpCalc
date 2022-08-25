@@ -3,9 +3,20 @@
 Currently support +, -, /, * and ()
 
 ## How to run?
+
+#### Clone repo
+
+```bash
+git clone https://github.com/ilyas-kalandar/SharpCalc
+```
+
+#### Change directory
 ```bash
 cd SharpCalc
-dotnet run
+```
+#### Run
+```bash
+dotnet run 
 ```
 ## Example
 ```bash
